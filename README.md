@@ -74,3 +74,96 @@ Cambios futuros (Módulos 7–8)
 - Implementación de pantallas reales en Android Studio.
 - Integración de notificaciones y calendario.
 - Pruebas, correcciones y documentación final.
+
+1. Creación del proyecto Android desde cero
+
+Se generó un proyecto completamente nuevo y limpio en Android Studio para evitar errores de Gradle y conflictos de compilación.
+Este paso permitió:
+
+Establecer correctamente la estructura app/src/main/...
+
+Configurar dependencias Kotlin + XML
+
+Garantizar compatibilidad con Android 8.0+
+
+Dejar un entorno estable para seguir creciendo en los siguientes módulos
+
+2. Implementación de la primera versión funcional de la app
+
+Por primera vez se desarrollaron pantallas reales:
+
+MainActivity
+
+Pantalla de inicio donde el usuario ingresa su nombre.
+
+Punto de entrada para futuras funciones de registro o preferencias.
+
+HomeActivity
+
+Pantalla que recibe los datos enviados desde MainActivity.
+
+Muestra un mensaje personalizado al usuario del tipo:
+“Bienvenido a Uruguaynt, Matías”
+
+Base para convertirla en el futuro “resumen del día”.
+
+Este avance marca el inicio del flujo real de la aplicación.
+
+3. Comunicación entre pantallas con Intents
+
+Se implementó el primer intercambio de información interna:
+
+putExtra() para enviar datos desde MainActivity
+
+getStringExtra() para recibirlos en HomeActivity
+
+Esto convierte la app en interactiva, permitiendo que el usuario genere contenido dinámico.
+Es también el primer paso para, en los módulos siguientes, transmitir tareas, horarios, configuraciones y más.
+
+4. Diseño y actualización de los layouts
+
+Se crearon los primeros archivos XML personalizados:
+
+activity_main.xml
+
+activity_home.xml
+
+Ambos contienen componentes listos para ampliarse, como:
+
+Inputs
+
+Botones
+
+TextViews dinámicos
+
+El diseño se mantuvo simple para priorizar funcionalidad, pero sienta las bases para incorporar los wireframes definidos previamente.
+
+5. Integración profesional con GitHub
+
+Por primera vez el proyecto Android quedó correctamente versionado:
+
+Configuración de Git dentro de Android Studio
+
+Sincronización con GitHub via token personal
+
+Subida de TODOS los archivos del proyecto (más de 130)
+
+Commit etiquetado correctamente:
+“Módulo 5: Actualización del proyecto + README”
+
+Este paso asegura trazabilidad, control de versiones y permitirá avanzar sin perder cambios.
+
+Resumen del avance
+
+Gracias a estos pasos, Uruguaynt ya no es solo un documento conceptual:
+Es un prototipo real, navegable, interactivo y con estructura técnica sólida, listo para expandirse en los módulos 6, 7 y 8 con:
+
+Pantallas adicionales
+
+Lógica de tareas
+
+Notificaciones
+
+Calendario
+
+Persistencia de datos
