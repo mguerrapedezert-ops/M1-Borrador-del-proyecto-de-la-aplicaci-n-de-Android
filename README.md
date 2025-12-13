@@ -167,3 +167,60 @@ Notificaciones
 Calendario
 
 Persistencia de datos
+
+
+## Durante esta etapa del proyecto se avanzó desde un borrador conceptual hacia una primera implementación funcional de la aplicación Android, consolidando la estructura base del código y el flujo principal de navegación.
+
+Los principales avances realizados fueron:
+Creación del proyecto Android en Android Studio utilizando Kotlin como lenguaje principal y XML para el diseño de interfaces.
+Estructuración del proyecto siguiendo buenas prácticas:
+Separación entre actividades (Activity) y recursos (layout, values, manifest).
+Uso de múltiples pantallas para representar el flujo real de la app.
+Implementación del flujo básico de navegación:
+Pantalla de inicio (MainActivity).
+Pantalla principal (HomeActivity) donde se muestran las tareas.
+Pantalla para agregar una tarea (AddTaskActivity) con campos de nombre, fecha y descripción.
+Pantalla de calendario (CalendarActivity) que muestra la información de la tarea creada.
+Comunicación entre pantallas mediante Intent y Extras, permitiendo:
+Pasar los datos de una tarea desde “Agregar tarea” al calendario.
+Volver al Home mostrando la última tarea agregada.
+Diseño inicial de la interfaz de usuario:
+Layouts en ConstraintLayout.
+TextViews y Buttons funcionales.
+Interfaz simple y clara, pensada para facilitar el uso.
+Configuración correcta del AndroidManifest.xml, registrando todas las actividades y definiendo el punto de entrada de la app.
+Actualización y ampliación del archivo README, incorporando:
+Descripción del proyecto.
+Exposición del problema.
+Plataforma.
+Funcionalidades.
+Registro de cambios (changelog).
+Uso activo de GitHub:
+Subida del proyecto completo al repositorio.
+Commits documentando los avances.
+Preparación del repositorio para su uso como base del Wiki.
+
+Este avance permite demostrar que el proyecto no es solo una idea, sino una aplicación en desarrollo con estructura y flujo funcional real.
+
+## Trabajo pendiente / Próximos pasos
+
+Si bien el proyecto cuenta con una base sólida, aún quedan aspectos por desarrollar y mejorar en las próximas etapas:
+
+Persistencia de datos:
+Guardar las tareas utilizando una base de datos local (Room) o almacenamiento persistente.
+Mejora del calendario:
+Visualización semanal o mensual.
+Mostrar múltiples tareas y no solo la última agregada.
+Validaciones de datos:
+Controlar campos vacíos o fechas inválidas al agregar tareas.
+Notificaciones:
+Implementar recordatorios automáticos según la fecha y hora de la tarea.
+Diseño visual:
+Mejorar colores, tipografías y consistencia visual.
+Adaptar la interfaz a distintos tamaños de pantalla.
+Arquitectura:
+Aplicar de forma más completa el patrón MVVM.
+Pruebas:
+Testing básico de funcionamiento y corrección de errores.
+Documentación:
+Ampliar la Wiki con capturas, diagramas y explicación técnica más profunda.
