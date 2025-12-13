@@ -7,42 +7,52 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/tvHomeTitle"
+        android:id="@+id/tvCalendarTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home"
+        android:text="Calendario"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
-        android:id="@+id/tvLastTask"
+        android:id="@+id/tvTaskName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Última tarea: (ninguna)"
+        android:text="Tarea:"
         android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@id/tvHomeTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvCalendarTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTaskDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fecha:"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTaskName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTaskDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Descripción:"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTaskDate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
-        android:id="@+id/btnGoAddTask"
+        android:id="@+id/btnBackHome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Agregar tarea"
+        android:text="Volver al Home"
         android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@id/tvLastTask"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-    <Button
-        android:id="@+id/btnViewCalendar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Ver calendario"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/btnGoAddTask"
+        app:layout_constraintTop_toBottomOf="@id/tvTaskDesc"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
